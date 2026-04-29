@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Портфолио</title>
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+        }
+    </script>
+    
+    <nav>
+        <a href="index.html">О себе</a>
+        <a href="projects.html">Проекты</a>
+        <button id="theme-toggle">Сменить тему</button>
+    </nav>
+    
+    <header>
+        <h1>Маркин Дмитрий</h1>
+        <p>Студент IT-факультета. Занимаюсь системным программированием и веб-разработкой.</p>
+        <p>Уверенный пользователь Windows, работал с Debian.</p>
+        <p>Умею работать с Selenium в Python. Писал на основе неё скрипт для компании</p>
+        <p>Знаю основы C++, C# (в т. ч. и WPF-приложения), Python, Java и Kotlin (мобильные приложения).</p>
+        <p>Могу создавать и поддерживать локальные сервера (в том числе VPN) для игр с друзьями.</p>
+        <p>Знаю HTML(5), таблицы стилей CSS(3)</p>
+        <p>Есть опыт работы с Arduino</p>
+
+        <h3>Стек технологий:</h3>
+        <ul>
+            <li>Python, C++, C#, Kotlin, Java</li>
+            <li>Debian, Proxmox, Docker</li>
+        </ul>
+        <p>Контактная информация (Telegram): @d_inc228</p>
+        <a href="projects.html" class="btn">Перейти к проектам</a>
+    </header>
+
+    <footer>
+        <p>&copy; 2026 Маркин Дмитрий. Все права защищены.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

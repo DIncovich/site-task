@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Мои проекты</title>
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+        }
+    </script>
+    
+    <nav>
+        <a href="index.html">О себе</a>
+        <a href="projects.html">Проекты</a>
+        <button id="theme-toggle">Сменить тему</button>
+    </nav>
+    <main>
+        <h1>Список проектов</h1>
+        <div class="project-list">
+            <a href="details.html" class="project-card">
+                <h2>Менеджер паролей</h2>
+                <p>Приложение на Python с использованием библиотеки cryptography.</p>
+            </a>
+        </div>
+        <br>
+        <a href="https://github.com/DIncovich/">Мой Github с проектами</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Маркин Дмитрий. Все права защищены.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Детали проекта</title>
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+        }
+    </script>
+
+    <nav>
+        <a href="index.html">О себе</a>
+        <a href="projects.html">Проекты</a>
+        <button id="theme-toggle">Сменить тему</button>
+    </nav>
+    <article>
+        <h1>Менеджер паролей</h1>
+        <p><strong>Цель:</strong> создание безопасного хранилища данных.</p>
+        <p><strong>Суть:</strong> генерация и шифрование паролей локально.</p>
+        <p><strong>Технологии:</strong> язык Python; библиотеки Tkinter, Cryptography и Random.</p>
+        <br>
+        <a href="projects.html" class="btn">Назад к списку проектов</a>
+    </article>
+
+    <footer>
+        <p>&copy; 2026 Маркин Дмитрий. Все права защищены.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
